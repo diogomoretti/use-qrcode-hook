@@ -2,7 +2,7 @@
   <img src="https://github.com/diogomoretti/use-qrcode/blob/main/logo.png?raw=true" width="100">
 </p>
 <h1 align="center">
-  UseQRCode
+  use-qrcode-hook
 </h1>
 <p>
   <p align="center"><em>A React Hook for generating QR codes.</em></p>
@@ -18,19 +18,19 @@
 **Using npm:**
 
 ```bash
-npm install @diogomoretti/use-qrcode
+npm install use-qrcode-hook
 ```
 
 **Using yarn:**
 
 ```bash
-yarn add @diogomoretti/use-qrcode
+yarn add use-qrcode-hook
 ```
 
 **Using pnpm:**
 
 ```bash
-pnpm add @diogomoretti/use-qrcode
+pnpm add use-qrcode-hook
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ pnpm add @diogomoretti/use-qrcode
 1. Import the hook:
 
 ```tsx
-import useQRCode from '@diogomoretti/use-qrcode';
+import useQRCode from 'use-qrcode-hook';
 ```
 
 2. Use the hook in your component:
@@ -56,7 +56,7 @@ const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
 **Example:**
 
 ```tsx
-import useQRCode from '@diogomoretti/use-qrcode';
+import useQRCode from 'use-qrcode-hook';
 
 const MyComponent = () => {
   const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {

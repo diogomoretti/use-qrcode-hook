@@ -1,5 +1,5 @@
 {
-  "name": "@diogomoretti/use-qrcode",
+  "name": "use-qrcode-hook",
   "version": "1.0.0",
   "description": "A React hook for generating QR codes with customizable options",
   "author": {
