@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import QRCode from 'qrcode';
 
-interface QRCodeOptions {
+export interface QRCodeOptions {
   width?: number;
   margin?: number;
   color?: {
-    dark?: string;
-    light?: string;
+    foreground?: string;
+    background?: string;
   };
 }
 
@@ -25,8 +25,8 @@ export const useQRCode = (url: string, options: QRCodeOptions = {}) => {
           width: options.width || 200,
           margin: options.margin || 1,
           color: {
-            dark: options.color?.dark || '#000000',
-            light: options.color?.light || '#ffffff'
+            dark: options.color?.foreground || '#000000',
+            light: options.color?.background || '#ffffff'
           }
         });
         
@@ -39,7 +39,7 @@ export const useQRCode = (url: string, options: QRCodeOptions = {}) => {
     };
 
     generateQRCode();
-  }, [url, options.width, options.margin, options.color?.dark, options.color?.light]);
+  }, [url, options.width, options.margin, options.color?.foreground, options.color?.background]);
 
   return { qrCodeDataUrl, error, isLoading };
 };

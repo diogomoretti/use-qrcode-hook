@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useQRCode } from '../hooks/useQRCode';
+import useQRCode from '../hooks';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { irBlack } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -10,14 +10,14 @@ import './QRCodeDemo.css';
 export const QRCodeDemo = () => {
   const [url, setUrl] = useState('https://google.com');
   const [width, setWidth] = useState(200);
-  const [darkColor, setDarkColor] = useState('#000000');
-  const [lightColor, setLightColor] = useState('#ffffff');
+  const [foregroundColor, setForegroundColor] = useState('#000000');
+  const [backgroundColor, setBackgroundColor] = useState('#ffffff');
 
   const { qrCodeDataUrl, error, isLoading } = useQRCode(url, {
     width,
     color: {
-      dark: darkColor,
-      light: lightColor
+      foreground: foregroundColor,
+      background: backgroundColor
     }
   });
 
@@ -60,21 +60,21 @@ export const QRCodeDemo = () => {
             </div>
 
             <div className="form-group">
-              <label className="form-label">Dark Color</label>
+              <label className="form-label">Foreground Color</label>
               <input
                 type="color"
-                value={darkColor}
-                onChange={(e) => setDarkColor(e.target.value)}
+                value={foregroundColor}
+                onChange={(e) => setForegroundColor(e.target.value)}
                 className="form-input"
               />
             </div>
 
             <div className="form-group">
-              <label className="form-label">Light Color</label>
+              <label className="form-label">Background Color</label>
               <input
                 type="color"
-                value={lightColor}
-                onChange={(e) => setLightColor(e.target.value)}
+                value={backgroundColor}
+                onChange={(e) => setBackgroundColor(e.target.value)}
                 className="form-input"
               />
             </div>
@@ -106,14 +106,14 @@ export const QRCodeDemo = () => {
           <h2 className="usage-title">How to Use</h2>
           <div className="code-block">
           <SyntaxHighlighter language="javascript" style={irBlack}>
-            {`import { useQRCode } from 'use-qrcode';
+            {`import useQRCode from 'use-qrcode';
 
 const MyComponent = () => {
   const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
     width: 200,
     color: {
-      dark: '#000',
-      light: '#fff'
+      foreground: '#000',
+      background: '#fff'
     }
   });
 

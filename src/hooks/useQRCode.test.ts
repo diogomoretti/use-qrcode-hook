@@ -29,8 +29,8 @@ describe('useQRCode', () => {
       width: 200,
       margin: 1,
       color: {
-        dark: '#000000',
-        light: '#ffffff'
+        foreground: '#000000',
+        background: '#ffffff'
       }
     });
   });
@@ -43,8 +43,8 @@ describe('useQRCode', () => {
       width: 300,
       margin: 2,
       color: {
-        dark: '#FF0000',
-        light: '#FFFF00'
+        foreground: '#FF0000',
+        background: '#FFFF00'
       }
     };
 
