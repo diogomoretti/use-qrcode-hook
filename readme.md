@@ -7,6 +7,9 @@
 <p>
   <p align="center"><em>A React Hook for generating QR codes.</em></p>
   <p align="center">
+    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/diogomoretti/use-qrcode-hook/demo.yml?style=for-the-badge">
+  </p>
+  <p align="center">
     <a href="https://diogomoretti.github.io/use-qrcode-hook/">View demo ➔</a>
   </p>
 </p>
