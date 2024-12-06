@@ -50,8 +50,8 @@ import useQRCode from 'use-qrcode-hook';
 const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
   width: 200,
   color: {
-    dark: '#000',
-    light: '#fff',
+    foreground: '#000',
+    background: '#fff',
   }
 });
 ```
