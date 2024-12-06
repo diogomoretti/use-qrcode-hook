@@ -4,13 +4,13 @@
 
 ## Installation
 
-*Using npm:*
+**Using npm:**
 
 ```bash
 npm install use-qrcode
 ```
 
-*Using yarn:*
+**Using yarn:**
 
 ```bash
 yarn add use-qrcode
@@ -36,7 +36,7 @@ const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
 });
 ```
 
-*Example:*
+**Example:**
 
 ```tsx
 import useQRCode from 'use-qrcode';
@@ -68,4 +68,4 @@ const MyComponent = () => {
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+[MIT License](./license.md)
