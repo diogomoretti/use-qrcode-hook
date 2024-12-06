@@ -27,6 +27,12 @@ npm install @diogomoretti/use-qrcode
 yarn add @diogomoretti/use-qrcode
 ```
 
+**Using pnpm:**
+
+```bash
+pnpm add @diogomoretti/use-qrcode
+```
+
 ## Usage
 
 1. Import the hook:
