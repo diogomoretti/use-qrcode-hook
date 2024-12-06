@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './src',
+  base: '',
   build: {
     outDir: 'demo',
+    assetsDir: 'assets',
   },
 });
