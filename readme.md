@@ -7,7 +7,7 @@
 <p>
   <p align="center"><em>A React Hook for generating QR codes.</em></p>
   <p align="center">
-    <a href="#">View demo ➔</a>
+    <a href="https://diogomoretti.github.io/use-qrcode-hook/">View demo ➔</a>
   </p>
 </p>
 
