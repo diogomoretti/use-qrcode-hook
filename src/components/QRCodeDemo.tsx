@@ -31,7 +31,7 @@ export const QRCodeDemo = () => {
             </div>
             <h1 className="qr-title">useQRCode</h1>
             <div className="qr-github">
-              <a href="https://github.com/mattrothenberg/useQRCode">
+              <a href="https://github.com/diogomoretti/use-qrcode-hook">
                 View on GitHub
               </a>
             </div>
@@ -106,7 +106,7 @@ export const QRCodeDemo = () => {
           <h2 className="usage-title">How to Use</h2>
           <div className="code-block">
           <SyntaxHighlighter language="javascript" style={irBlack}>
-            {`import useQRCode from 'use-qrcode';
+            {`import useQRCode from 'use-qrcode-hook';
 
 const MyComponent = () => {
   const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
@@ -119,7 +119,7 @@ const MyComponent = () => {
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
-  
+
   return <img src={qrCodeDataUrl} alt="QR Code" />;
 };`}
             </SyntaxHighlighter>

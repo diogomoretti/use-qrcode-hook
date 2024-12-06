@@ -31,7 +31,8 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "release": "npm run build && npm publish --access public && npm run publish-tag",
-    "publish-tag": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
+    "publish-tag": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
+    "build:demo": "vite build --config vite.demo.config.ts"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
