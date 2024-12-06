@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/diogomoretti/use-qrcode/blob/main/logo.png?raw=true" width="200">
+  <img src="https://github.com/diogomoretti/use-qrcode/blob/main/logo.png?raw=true" width="100">
 </p>
 <h1 align="center">
   UseQRCode
