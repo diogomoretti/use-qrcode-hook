@@ -1,7 +1,12 @@
 {
-  "name": "react-qrcode-hook",
+  "name": "@diogomoretti/use-qrcode",
   "version": "1.0.0",
   "description": "A React hook for generating QR codes with customizable options",
+  "author": {
+    "name": "Diogo Moretti",
+    "email": "diogo.pearljam@gmail.com",
+    "url": "https://github.com/diogomoretti"
+  },
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -24,7 +29,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "release": "npm run build && npm publish --access public && npm run publish-tag",
+    "publish-tag": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -63,14 +70,13 @@
     "qrcode",
     "typescript"
   ],
-  "author": "Your Name",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/react-qrcode-hook"
+    "url": "https://github.com/diogomoretti/use-qrcode"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-qrcode-hook/issues"
+    "url": "https://github.com/diogomoretti/use-qrcode/issues"
   },
-  "homepage": "https://github.com/yourusername/react-qrcode-hook#readme"
+  "homepage": "https://github.com/diogomoretti/use-qrcode#readme"
 }

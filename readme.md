@@ -18,13 +18,13 @@
 **Using npm:**
 
 ```bash
-npm install use-qrcode
+npm install @diogomoretti/use-qrcode
 ```
 
 **Using yarn:**
 
 ```bash
-yarn add use-qrcode
+yarn add @diogomoretti/use-qrcode
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ yarn add use-qrcode
 1. Import the hook:
 
 ```tsx
-import useQRCode from 'use-qrcode';
+import useQRCode from '@diogomoretti/use-qrcode';
 ```
 
 2. Use the hook in your component:
@@ -50,7 +50,7 @@ const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
 **Example:**
 
 ```tsx
-import useQRCode from 'use-qrcode';
+import useQRCode from '@diogomoretti/use-qrcode';
 
 const MyComponent = () => {
   const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
