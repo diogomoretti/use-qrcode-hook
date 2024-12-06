@@ -17,7 +17,7 @@ export const QRCodeDemo = () => {
     width,
     color: {
       foreground: foregroundColor,
-      background: backgroundColor
+      background: backgroundColor,
     }
   });
 
@@ -113,7 +113,7 @@ const MyComponent = () => {
     width: 200,
     color: {
       foreground: '#000',
-      background: '#fff'
+      background: '#fff',
     }
   });
 

@@ -31,7 +31,7 @@ const { qrCodeDataUrl, error, isLoading } = useQRCode('https://example.com', {
   width: 200,
   color: {
     dark: '#000',
-    light: '#fff'
+    light: '#fff',
   }
 });
 ```
@@ -46,7 +46,7 @@ const MyComponent = () => {
     width: 200,
     color: {
       foreground: '#000',
-      background: '#fff'
+      background: '#fff',
     }
   });
 
