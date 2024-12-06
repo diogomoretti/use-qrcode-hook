@@ -1,6 +1,17 @@
-# useQRCode
+<p align="center">
+  <img src="https://github.com/diogomoretti/use-qrcode/blob/main/logo.png?raw=true" width="200">
+</p>
+<h1 align="center">
+  UseQRCode
+</h1>
+<p>
+  <p align="center"><em>A React Hook for generating QR codes.</em></p>
+  <p align="center">
+    <a href="#">View demo ➔</a>
+  </p>
+</p>
 
-> A React Hook for generating QR codes.
+<br>
 
 ## Installation
 
