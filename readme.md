@@ -70,9 +70,10 @@ const MyComponent = () => {
 
 ## Options
 
+The first parameter is the URL to encode in the QR code, and this is the only required parameter. The second parameter is an object with the following options:
+
 | Parameter | Type | Default | Description | Required |
 |-----------|------|--------|-----------|----------|
-| `url` | string | - | URL to encode in the QR code | Yes |
 | `width` | number | 200 | QR code width in pixels | No |
 | `color.foreground` | string | #000 | Foreground color (hex) | No |
 | `color.background` | string | #fff | Background color (hex) | No |
