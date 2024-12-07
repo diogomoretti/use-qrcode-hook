@@ -84,6 +84,7 @@ The first parameter is the URL to encode in the QR code, and this is the only re
 | Parameter | Type | Default | Description | Required |
 |-----------|------|--------|-----------|----------|
 | `width` | number | 200 | QR code width in pixels | No |
+| `margin` | number | 1 | QR code margin in pixels | No |
 | `color.foreground` | string | #000 | Foreground color (hex) | No |
 | `color.background` | string | #fff | Background color (hex) | No |
 
